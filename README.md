@@ -32,3 +32,32 @@ By using the Unity animation tool, a globe spin was animated and triggered by th
 <p align="center">
   <img src="Images/globe_animation.gif" width="700" height="435"/>
 </p>
+
+### VR Mode Build
+
+This project uses the Google VR SDK to display 2 camera views of the scene. When the build is pushed to an Android device, it will split the phone into a left and right view, while properly distorting the views to counter the lens distortion. A "Google cardboard" viewer is used which is literally cardboard with two lenses. The mobile phone is held in the viewer and the screen is placed at a distance away from the lenses equal to the focal length of the lenses.
+
+<p align="center">
+  <img src="Images/lens.PNG" width="500" height="300"/>
+</p>
+
+In this image, _f_ is the focal length distance of the lens. Light rays from a pixel are divergent, and leave the phone screen. They pass through the lens which when coming from a distance equal to the focal length, they become parallel rays. This places a virtual image of the particular pixel at optical infinity, which allows the retina lens in the eye to focus these rays onto the retina. Optical infinity means the magnified phone screen image isn't appearing to come from as close up as it actually is to the eye, but rather from very vary far away so the eye can comfortably focus the image without eye strain.
+
+The image displayed on the phone screen looks like:
+
+<p align="center">
+  <img src="Images/VR_Apartment_VRView.PNG" width="500" height="300"/>
+</p>
+
+To view this project on an Android device, copy the build from the build folder onto the phone. Install the build by navigating to the directory you copied it to, and launch the APK file. After the build installs, launch it and it should launch in VR mode. Place the phone into a cardboard viewer (this also works on a Samsung Gear) and place the viewer against your face. To navigate around by waypoints, just look at one and click the button (depending on your viewer). The globe animation can be animated by looking at the globe and clicking on the button which will animate it.
+
+<p align="center">
+  <img src="Images/VR_Apartment_CouchView.PNG" width="500" height="300"/>
+</p>
+
+<p align="center">
+  <img src="Images/VR_Apartment_DiningRoom.PNG" width="500" height="300"/>
+</p>
+
+Happy VR viewing!
+
