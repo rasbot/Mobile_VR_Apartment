@@ -27,7 +27,7 @@ Mobile VR has only 3 degrees of freedom. The user can look left / right, up / do
 
 ### Interactions and Animations
 
-By using the Unity animation tool, a globe spin was animated and triggered by the click of the mobile VR headset. The Google VR viewer listens for a click which can be initiated on older mobile headsets as a magnetic "button" or the more recent headsets which essentially have a screen press as a button, and that click is used with `Animator.SetTrigger()` to play the animation once, spinning the globe. The user uses the waypoints to naviagate closer to the globe and can spin the globe using this process.
+By using the Unity animation tool, a globe spin was animated and triggered by the click of the mobile VR headset. The Google VR viewer listens for a click which can be initiated on older mobile headsets as a magnetic "button" or the more recent headsets which essentially have a screen press as a button, and that click is used with `Animator.SetTrigger()` to play the animation once, spinning the globe. The user uses the waypoints to navigate closer to the globe and can spin the globe using this process.
 
 <p align="center">
   <img src="Images/globe_animation.gif" width="700" height="435"/>
