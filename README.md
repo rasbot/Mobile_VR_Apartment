@@ -6,7 +6,7 @@ As part of the Udacity VR Nanodeveloper degree, one of the first projects in Uni
 
 Key concepts in this project include:
 
-### Building environments
+## Building environments
 
 Games and VR experiences need worlds. Environments build in Unity consist of putting together assets, having skyboxes to enhance the intended mood, and giving the user things to explore an interact with. This project was one of the early projects to start building an environment, and an apartment setting was created.
 
@@ -15,7 +15,7 @@ Games and VR experiences need worlds. Environments build in Unity consist of put
   <img src="Images/VR_Apartment_OutsideView.PNG" width="700" height="auto"/>
 </p>
 
-### Locomotion
+## Locomotion
 
 Mobile VR has only 3 degrees of freedom. The user can look left / right, up / down, and tilt their view of the environment. Modern VR systems such as the Oculus Rift or HTC Vive have 6 degrees of freedom which allows for translational motion in 3 dimensions along with rotational motion. For a mobile VR environment, some way of getting around is needed if movement within the game world is intended. One common approach to this is to use the click button of the VR headset to move to a specified waypoint. These waypoints are positioned around the environment and when the user looks at one and clicks the headset, they move to that position in the environment.
 
@@ -23,7 +23,7 @@ Mobile VR has only 3 degrees of freedom. The user can look left / right, up / do
   <img src="Images/VR_Apartment_Waypoints.PNG" width="700" height="auto"/>
 </p>
 
-### Interactions and Animations
+## Interactions and Animations
 
 By using the Unity animation tool, a globe spin was animated and triggered by the click of the mobile VR headset. The Google VR viewer listens for a click which can be initiated on older mobile headsets as a magnetic "button" or the more recent headsets which essentially have a screen press as a button, and that click is used with `Animator.SetTrigger()` to play the animation once, spinning the globe. The user uses the waypoints to navigate closer to the globe and can spin the globe using this process.
 
@@ -31,7 +31,7 @@ By using the Unity animation tool, a globe spin was animated and triggered by th
   <img src="Images/globe_animation.gif" width="700" height="auto"/>
 </p>
 
-### VR Mode Build
+## VR Mode Build
 
 This project uses the Google VR SDK to display 2 camera views of the scene. When the build is pushed to an Android device, it will split the phone into a left and right view, while properly distorting the views to counter the lens distortion. A "Google cardboard" viewer is used which is literally cardboard with two lenses. The mobile phone is held in the viewer and the screen is placed at a distance away from the lenses equal to the focal length of the lenses.
 
@@ -46,6 +46,8 @@ The image displayed on the phone screen looks like:
 <p align="center">
   <img src="Images/VR_Apartment_VRView.PNG" width="500" height="auto"/>
 </p>
+
+## Android Build
 
 To view this project on an Android device, copy the build from the build folder onto the phone. Install the build by navigating to the directory you copied it to, and launch the APK file. After the build installs, launch it and it should launch in VR mode. Place the phone into a cardboard viewer (this also works on a Samsung Gear) and place the viewer against your face. To navigate around by waypoints, just look at one and click the button (depending on your viewer). The globe animation can be animated by looking at the globe and clicking on the button which will animate it.
 
