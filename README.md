@@ -1,4 +1,6 @@
-# Mobile VR Apartment
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rasbot/Mobile_VR_Apartment/master/Images/VR_Apartment.png" width="850" height="auto"/>
+</p>
 
 As part of the Udacity VR Nanodeveloper degree, one of the first projects in Unity was to create a VR Apartment. This was a project that connected some of the more basic concepts of creating and interacting with a VR environment built in the Unity game engine and deployed to a mobile APK using the GoogleVR SDK. 
 
